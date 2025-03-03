@@ -1,10 +1,9 @@
- 
- declare global{
- interface WeatherData {
-     temperature: number;
-     humidity: number;
-     wind: number;
-     rain: number;
-     }
-    }
-     export {};
+declare global {
+  interface WeatherData {
+    temperature: number;
+    humidity: number;
+    wind: number;
+    rain: number;
+  }
+}
+export {};
