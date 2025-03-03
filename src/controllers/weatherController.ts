@@ -1,4 +1,6 @@
-import { Request, Response } from "express";
+
+  import { Request, Response } from "express";
+
  import {
  generateDublinWeatherData,
  generateLondonWeatherData,
@@ -40,7 +42,7 @@ import { Request, Response } from "express";
      res.status(404).send("City not found");
      }
      // We will return the weather data as JSON
-     res.status(200).json(finalWeatherData);
+     res.status(200).json(getWeatherData);
      } catch (error) {
      // If there is an error, we will log it and send a 500 status code
      res.status(500).send("Error in fetching weather data");

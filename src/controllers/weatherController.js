@@ -46,7 +46,7 @@ const getWeatherData = (req, res) => __awaiter(void 0, void 0, void 0, function*
             res.status(404).send("City not found");
         }
         // We will return the weather data as JSON
-        res.status(200).json(finalWeatherData);
+        res.status(200).json(exports.getWeatherData);
     }
     catch (error) {
         // If there is an error, we will log it and send a 500 status code
